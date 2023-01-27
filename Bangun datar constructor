@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.pbotrial;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Revy Adelinda
+ */
+public class Persegi {
+
+    double sisi;
+
+    public Persegi() {
+        this.sisi = sisi;
+    }
+
+    public void luas(int sisi) {
+        double luas = sisi * sisi;
+        JOptionPane.showMessageDialog(null, "luasnya adalah " + luas);
+    }
+
+    public void keliling() {
+        Double sisi = Double.parseDouble(JOptionPane.showInputDialog(null, "Masukkan sisinya"));
+        double kllg = 4 * sisi;
+        JOptionPane.showMessageDialog(null, "keliling adalah " + kllg);
+    }
+
+    public static void main(String[] args) {
+        Persegi per = new Persegi();
+        System.out.println("persegi");
+        int sisi = Integer.parseInt(JOptionPane.showInputDialog("Masukkan sisi: "));
+        per.luas(sisi);
+        per.keliling();
+    }
+}
